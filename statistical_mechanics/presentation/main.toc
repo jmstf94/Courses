@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{Intro}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivations}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Density Matrix Formalism}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Assumptions}{5}{0}{1}
+\beamer@sectionintoc {2}{Theories}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Typicality}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Environment assisted invariance}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Definition}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Demonstration}{8}{0}{2}
+\beamer@sectionintoc {3}{Conclusions}{9}{0}{3}

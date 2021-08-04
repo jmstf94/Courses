@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% document class
+%\documentclass{beamer}
+%\documentclass[aspectratio=169]{beamer}
+\documentclass[handout]{beamer}
+
+%% packages
+\input{settings/packages}
+
+%% page settings
+\input{settings/page}
+
+%% new commands
+\input{settings/macros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\author[Stefanopoulos]{Stefanopoulos Dimitrios}
+\title[Quantum Thermodynamics]{Statistical Mechanics from Quantum Thermodynamics}
+\titlegraphic{\includegraphics[width=0.3\textwidth]{figures/heat}}
+\institute{Aristotle's University of Thessaloniki}
+\date{Thessaloniki, July 1, 2020}
+\frame{\titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Table of contents}
+\tableofcontents
+%\tableofcontents[hideallsubsections]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Intro}
+\subsection{Motivations}
+\begin{frame}{Need for quantum foundations of statistical mechanics}
+\begin{itemize}
+\item Quantum probability amplitudes are not consistent with the axiom of a priori equal probability(at least not on first sight).
+\item Absence of unitarity in the evolution of thermodynamic systems.
+\item Further applications.
+\end{itemize}
+\end{frame}
+\subsection{Density Matrix Formalism}
+\begin{frame}{Density Matrix}
+\begin{itemize}
+\item The definition:
+\begin{equation}
+\rho=\sum_{j} p_{j}\left|\psi_{j}\right\rangle\left\langle\psi_{j}\right|
+\end{equation}
+\item Quantum Randomness vs Classical Randomness:
+\begin{equation}\sum p_j =1
+\end{equation}
+\item The canonical state:
+\begin{equation}
+\Omega_{S}=(1-p)^{k} \sum_{s} \exp \left(-\frac{|s| B}{\mathrm{k}_{B} T}\right)|s\rangle\langle s|
+\propto \exp \left(-\frac{H_{S}}{\mathrm{k}_{B} T}\right)
+\label{Omega}
+\end{equation}
+\end{itemize}
+
+\end{frame}
+\subsection{Assumptions}
+\begin{frame}{Assumptions}
+\begin{itemize}
+\item Restricted Subspace $R$
+\begin{equation}\mathcal{H}_{R} \subseteq \mathcal{H}_{S} \otimes \mathcal{H}_{E}
+\end{equation}
+\begin{center}
+\includegraphics[scale=0.4]{figures/photo}
+\end{center}
+
+\item Equiprobable:
+\begin{equation}
+\mathcal{E}_{R}=\frac{\mathbb{I}_{R}}{d_{R}}
+\label{equiprob}
+\end{equation}
+\item State of the system:
+\begin{equation}\Omega_{S}=\operatorname{Tr}_{E}\left(\mathcal{E}_{R}\right)
+\end{equation}
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Theories}
+\subsection{Typicality}
+\begin{frame}{Typicality}
+\begin{itemize}
+\item We compare with a pure state of the Universe.
+\item Typicality is a naturally statistical equality of an observable in the two cases (i.e. pure or maximally mixed state of the universe):
+\begin{equation}
+\rho_{S}= \operatorname{Tr}_{E}(\ket{\psi}\bra{\psi})
+\end{equation}
+\item It has been proven that for sufficiently large 
+dimensions of the environment(i.e. possible states):
+\begin{equation}
+||\rho_S-\Omega_S||\approx 0
+\end{equation}
+
+\end{itemize}
+
+\end{frame}
+\subsection{Environment assisted invariance}
+\subsubsection{Definition}
+\begin{frame}{Envariance}
+\begin{itemize}
+\item There are arguments that the symmetry of envariance can produce Born's rule and Thermal States.
+\item \ $\psi_{SE}$ is called envariant under a unitary map $U_{\mathcal{S}}=u_{S} \otimes \mathbb{I}_{E}$ iff there exists another unitary $U_{E}= \mathbb{I}_{E} \otimes u_{E} $ such that:
+\begin{equation}
+\begin{array}{l}
+U_{S}\left|\psi_{S E}\right\rangle=\left(u_{S} \otimes \mathbb{I}_{E}\right)\left|\psi_{S E}\right\rangle=\left|\eta_{S E}\right\rangle \\
+U_{E}\left|\eta_{S \mathcal{E}}\right\rangle=\left(\mathbb{I}_{S} \otimes u_{E}\right)\left|\eta_{S E}\right\rangle=\left|\psi_{S E}\right\rangle
+\end{array}
+\end{equation}
+\end{itemize}
+\end{frame}
+\subsubsection{Demonstration}
+
+\begin{frame}{Envariance}
+To illustrate the above we state a simple example. Let $\mathcal{S}$ and $E$ be two level systems and assume that $\left|\psi_{SE}\right\rangle \propto|\uparrow\rangle_{S} \otimes|\uparrow\rangle_{E}+|\downarrow\rangle_{S} \otimes|\downarrow\rangle_{E}$. 
+\begin{equation}
+|\uparrow\rangle_{\mathcal{S}} \otimes|\uparrow\rangle_{E}+|\downarrow\rangle_{\mathcal{S}} \otimes|\downarrow\rangle_{E} \stackrel{U_{\mathcal{S}}}{\longrightarrow}|\downarrow\rangle_{\mathcal{S}} \otimes|\uparrow\rangle_{E}+|\uparrow\rangle_{\mathcal{S}} \otimes|\downarrow\rangle_{E}
+\end{equation}
+\begin{equation}
+|\downarrow\rangle_{\mathcal{S}} \otimes|\uparrow\rangle_{E}+|\uparrow\rangle_{\mathcal{S}} \otimes|\downarrow\rangle_{E} \stackrel{U_{E}}{\longrightarrow}|\downarrow\rangle_{\mathcal{S}} \otimes|\downarrow\rangle_{E}+|\uparrow\rangle_{\mathcal{S}} \otimes|\uparrow\rangle_{E}
+\end{equation}
+\end{frame}
+\section{Conclusions}
+\begin{frame}{Conclusions}
+\begin{itemize}
+\item Quantum Thermodynamics promises a lot about the foundations of Statistical Mechanics.
+\item Information Theoretic Approaches are quite convincing and they obviously have something to do with Statistical Mechanics in general.
+\item Quantum Entanglement is of a vital importance in the production of Statistical Mechanics Formulas via Hilbert Spaces.
+\end{itemize}
+\end{frame}
+\begin{frame}{The end}
+\begin{center}
+\Huge Thank you!!!!
+\end{center}
+\end{frame}
+\end{document}
