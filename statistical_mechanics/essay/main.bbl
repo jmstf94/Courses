@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+
+\bibitem{alicki2015comments}
+R.~Alicki.
+\newblock Comments on the paper" foundation of statistical mechanics from
+  symmetries of entanglement" by s. deffner and w. zurek.
+\newblock {\em arXiv preprint arXiv:1504.06572}, 2015.
+
+\bibitem{chiribella2016entanglement}
+G.~Chiribella and C.~M. Scandolo.
+\newblock Entanglement as an axiomatic foundation for statistical mechanics.
+\newblock {\em arXiv preprint arXiv:1608.04459}, 2016.
+
+\bibitem{deffner2019quantum}
+S.~Deffner and S.~Campbell.
+\newblock {\em Quantum Thermodynamics: An introduction to the thermodynamics of
+  quantum information}.
+\newblock Morgan \& Claypool Publishers, 2019.
+
+\bibitem{deffner2016foundations}
+S.~Deffner and W.~H. Zurek.
+\newblock Foundations of statistical mechanics from symmetries of entanglement.
+\newblock {\em New Journal of Physics}, 18(6):063013, 2016.
+
+\bibitem{goldstein2006canonical}
+S.~Goldstein, J.~L. Lebowitz, R.~Tumulka, and N.~Zangh{\`\i}.
+\newblock Canonical typicality.
+\newblock {\em Physical review letters}, 96(5):050403, 2006.
+
+\bibitem{goold2016role}
+J.~Goold, M.~Huber, A.~Riera, L.~Del~Rio, and P.~Skrzypczyk.
+\newblock The role of quantum information in thermodynamics—a topical review.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical},
+  49(14):143001, 2016.
+
+\bibitem{milman2009asymptotic}
+V.~D. Milman and G.~Schechtman.
+\newblock {\em Asymptotic theory of finite dimensional normed spaces:
+  Isoperimetric inequalities in riemannian manifolds}, volume 1200.
+\newblock Springer, 2009.
+
+\bibitem{PATHRIA2011115}
+R.~Pathria and P.~D. Beale.
+\newblock 5 - formulation of quantum statistics.
+\newblock In R.~Pathria and P.~D. Beale, editors, {\em Statistical Mechanics
+  (Third Edition)}, pages 115 -- 140. Academic Press, Boston, third edition
+  edition, 2011.
+
+\bibitem{popescu2006entanglement}
+S.~Popescu, A.~J. Short, and A.~Winter.
+\newblock Entanglement and the foundations of statistical mechanics.
+\newblock {\em Nature Physics}, 2(11):754--758, 2006.
+
+\bibitem{potts2019introduction}
+P.~P. Potts.
+\newblock Introduction to quantum thermodynamics (lecture notes).
+\newblock {\em arXiv preprint arXiv:1906.07439}, 2019.
+
+\bibitem{schlosshauer2003zurek}
+M.~Schlosshauer and A.~Fine.
+\newblock On zurek's derivation of the born rule.
+\newblock {\em arXiv preprint quant-ph/0312058}, 2003.
+
+\bibitem{vermeyden2015experimental}
+L.~Vermeyden, X.~Ma, J.~Lavoie, M.~Bonsma, U.~Sinha, R.~Laflamme, and K.~Resch.
+\newblock Experimental test of environment-assisted invariance.
+\newblock {\em Physical Review A}, 91(1):012120, 2015.
+
+\bibitem{vinjanampathy2016quantum}
+S.~Vinjanampathy and J.~Anders.
+\newblock Quantum thermodynamics.
+\newblock {\em Contemporary Physics}, 57(4):545--579, 2016.
+
+\bibitem{zurek2003environment}
+W.~H. Zurek.
+\newblock Environment-assisted invariance, entanglement, and probabilities in
+  quantum physics.
+\newblock {\em Physical review letters}, 90(12):120404, 2003.
+
+\end{thebibliography}
