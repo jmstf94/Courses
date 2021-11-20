@@ -382,10 +382,6 @@ class RandomWalkRobot(Robot):
         self.setRobotPosition(newpos)
 
 
-
-
-
-
 def showPlot1(title, x_label, y_label):
     """
     What information does the plot produced by this function tell you?
@@ -426,22 +422,3 @@ def showPlot2(title, x_label, y_label):
     pylab.xlabel(x_label)
     pylab.ylabel(y_label)
     pylab.show()
-
-
-# === Problem 6
-# NOTE: If you are running the simulation, you will have to close it
-# before the plot will show up.
-
-#
-# 1) Write a function call to showPlot1 that generates an appropriately-labeled
-#     plot.
-#
-#       (... your call here ...)
-#
-
-#
-# 2) Write a function call to showPlot2 that generates an appropriately-labeled
-#     plot.
-#
-#       (... your call here ...)
-#
