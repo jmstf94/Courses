@@ -18,8 +18,9 @@ def solve(s):
             for x2 in range(0,x+1):
                 for x3 in range(0,x+1):
                     for x4 in range(0,x+1):
-                        if eq(x1,x2,x3,x4)==s:
+                        if eq(x1,x2,x3,x4)==s  and x1+x2+x3+x4==x:
                             return [x1,x2,x3,x4]
+    return [x1,x2,x3,x4]
 
 
 def test():
@@ -40,3 +41,8 @@ def test():
     print("Your grade is : "+str(grade)+"/20.")
 
 test()
+
+"""
+Challenge: make the solve() for efficient. Right now it is not wrong(i.e. it passes the test) however it is
+clearly n^4 complexity(inside the loop about s), however we can probably do it in logn                                                                                               
+"""
