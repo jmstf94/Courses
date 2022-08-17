@@ -1,0 +1,29 @@
+\section{Διακριτός Τυχαίος Περίπατος - Μέση τετραγωνική απόσταση}
+\subsection{Σε μία διάσταση}
+\en
+\begin{python}
+start_time = time.time()
+
+########1D grid##########
+# We assume it starts from position 0 every time.
+# Thus for the calculation of square distance each
+# time I just square the position (finalpos-0)^2
+
+sd_sum = 0
+runs = 100000
+t=1000
+step = 1
+for i in range(runs):
+    position = 0
+    for j in range(t):
+        move = random.choice([-step,+step])
+        position = position + move
+    sd_sum+=position**2
+mean_sd = sd_sum/runs
+
+print(f"The Mean Square Distance is {mean_sd}.")
+print(f"Execution Time: {(time.time() - start_time)} seconds.")
+\end{python}
+\gr 
+ασδφασδφ
+\subsection{Σε δύο διαστάσεις}
