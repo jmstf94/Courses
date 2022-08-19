@@ -38,6 +38,7 @@
 
 \usepackage[greek,english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 %\usepackage[iso-8859-7]{inputenc}
 \usepackage{cmbright}
 \usepackage[default]{gfsneohellenic}
@@ -51,5 +52,8 @@
 \usepackage{spverbatim}
 
 \usepackage{pythonhighlight}
-%\usepackage{listings}
-%\lstdefinestyle{}
+\usepackage{listings}
+\lstset{
+    escapeinside={(*@}{@*)}}
+
+\usepackage[document]{ragged2e}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.17)  17 AUG 2022 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.17)  19 AUG 2022 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1032,6 +1032,9 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks47
 \inpenc@posthook=\toks48
 )
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\cmbright.sty
 Package: cmbright 2005/04/13 v8.1 (WaS)
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
@@ -1097,11 +1100,11 @@ LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 64.
 LaTeX Font Info:    Redeclaring math symbol \varphi on input line 65.
 LaTeX Info: Redefining \LaTeX on input line 129.
 LaTeX Info: Redefining \LaTeXe on input line 139.
-LaTeX Font Info:    Trying to load font information for OT1+cmbr on input line 
-144.
+LaTeX Font Info:    Trying to load font information for T1+cmbr on input line 1
+44.
 
-(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\ot1cmbr.fd
-File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\t1cmbr.fd
+File: t1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/gfsneohellenic\gfsneohe
 llenic.sty
@@ -1318,7 +1321,7 @@ Package: appendix 2020/02/08 v1.2c extra appendix facilities
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/spverbatim\spverbatim.s
 ty
 Package: spverbatim 2009/08/10 v1.0 Verbatim with breakable spaces
-))
+)
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/pythonhighlight\pythonh
 ighlight.sty
 Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivi
@@ -1348,6 +1351,45 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+))
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks50
+\footnotemargin=\dimen279
+\@outputbox@depth=\dimen280
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764
+.
+)
+\CenteringLeftskip=\skip67
+\RaggedLeftLeftskip=\skip68
+\RaggedRightLeftskip=\skip69
+\CenteringRightskip=\skip70
+\RaggedLeftRightskip=\skip71
+\RaggedRightRightskip=\skip72
+\CenteringParfillskip=\skip73
+\RaggedLeftParfillskip=\skip74
+\RaggedRightParfillskip=\skip75
+\JustifyingParfillskip=\skip76
+\CenteringParindent=\skip77
+\RaggedLeftParindent=\skip78
+\RaggedRightParindent=\skip79
+\JustifyingParindent=\skip80
+) (settings/macros.tex
+\c@definition=\count352
+\c@proposition=\count353
 ) (settings/page.tex
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -1355,44 +1397,40 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count352
-\Gm@cntv=\count353
-\c@Gm@tempcnt=\count354
-\Gm@bindingoffset=\dimen279
-\Gm@wd@mp=\dimen280
-\Gm@odd@mp=\dimen281
-\Gm@even@mp=\dimen282
-\Gm@layoutwidth=\dimen283
-\Gm@layoutheight=\dimen284
-\Gm@layouthoffset=\dimen285
-\Gm@layoutvoffset=\dimen286
-\Gm@dimlist=\toks50
+\Gm@cnth=\count354
+\Gm@cntv=\count355
+\c@Gm@tempcnt=\count356
+\Gm@bindingoffset=\dimen281
+\Gm@wd@mp=\dimen282
+\Gm@odd@mp=\dimen283
+\Gm@even@mp=\dimen284
+\Gm@layoutwidth=\dimen285
+\Gm@layoutheight=\dimen286
+\Gm@layouthoffset=\dimen287
+\Gm@layoutvoffset=\dimen288
+\Gm@dimlist=\toks51
 
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip67
-\f@nch@O@elh=\skip68
-\f@nch@O@erh=\skip69
-\f@nch@O@olh=\skip70
-\f@nch@O@orh=\skip71
-\f@nch@O@elf=\skip72
-\f@nch@O@erf=\skip73
-\f@nch@O@olf=\skip74
-\f@nch@O@orf=\skip75
+\f@nch@headwidth=\skip81
+\f@nch@O@elh=\skip82
+\f@nch@O@erh=\skip83
+\f@nch@O@olh=\skip84
+\f@nch@O@orh=\skip85
+\f@nch@O@elf=\skip86
+\f@nch@O@erf=\skip87
+\f@nch@O@olf=\skip88
+\f@nch@O@orf=\skip89
 )
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)) (settings/macros.tex
-\c@definition=\count355
-\c@proposition=\count356
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-5.
-
-(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
+.
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -1405,6 +1443,12 @@ LaTeX Font Info:    Trying to load font information for LGR+lmss on input line
 
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrlmss.fd
 File: lgrlmss.fd 2017/07/29 v1.2 Scalable Greek Latin Modern Sans Serif
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+20.
+
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
 \openout1 = `main.aux'.
 
@@ -1425,6 +1469,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 5.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 5
 .
+
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
@@ -1438,16 +1483,16 @@ LaTeX Font Info:    ... okay on input line 5.
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count358
-\scratchdimen=\dimen287
+\scratchdimen=\dimen289
 \scratchbox=\box76
 \nofMPsegments=\count359
 \nofMParguments=\count360
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks52
 \MPscratchCnt=\count361
-\MPscratchDim=\dimen288
+\MPscratchDim=\dimen290
 \MPnumerator=\count362
 \makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks53
 )
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1479,6 +1524,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 \openout5 = `main.out'.
 
 \c@lstlisting=\count364
+Package ragged2e Info: ABD: executing \RaggedRight on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1515,7 +1561,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (parts/titlepage.tex
-<figures/authsymbol.png, id=70, 246.9225pt x 205.76875pt>
+<figures/authsymbol.png, id=82, 246.9225pt x 205.76875pt>
 File: figures/authsymbol.png Graphic file (type png)
 <use figures/authsymbol.png>
 Package pdftex.def Info: figures/authsymbol.png  used on input line 19.
@@ -1561,12 +1607,7 @@ LaTeX Font Info:    Font shape `OT1/neohellenic/m/n' will be
 (Font)              scaled to size 9.80005pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/neohellenic/m/n' will be
 (Font)              scaled to size 7.35004pt on input line 46.
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--53
-
- []
-
-[1
+ [1
 
 
 {C:/Users/jmstf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/au
@@ -1576,8 +1617,8 @@ thsymbol.png>]) (parts/abstract.tex [2]) [3] [4
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- (parts/Intro.tex
-[5] [6
+
+(parts/Intro.tex [5] [6
 
 ]
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
@@ -1593,63 +1634,217 @@ extiota \textomicron  2.
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  3.
 (parts/DiscreteRW.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\LGR/lmss/bx/n/17.28 DiakritÏc Tu-qa-–oc Pe-r–pa-toc - MËsh
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 12--13
+[][][][] 
+ []
+
+
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 18--19
+[][][][] 
  []
 
 (C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-4.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+5.
 
-(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+(C:\Users\jmstf\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 16.
-)
-(parts/ContinuousRW.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\LGR/lmss/bx/n/17.28 Suneq†c tu-qa-–oc pe-r–pa-toc se d‘o
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 27.
+ [12]
+Overfull \hbox (17.25325pt too wide) in paragraph at lines 66--69
+[]\LGR/lmss/m/n/12 EpomËnwc ar-qi-ko-poio-‘me gia to Ëna [][]\T1/lmss/m/n/12 ru
+n[] []\LGR/lmss/m/n/12 d‘o me-ta-blh-tËc [][]\T1/lmtt/m/n/12 position_x[][]\LGR
+/lmss/m/n/12 =0 kai [][]\T1/lmtt/m/n/12 position_y[][]\LGR/lmss/m/n/12 =0. 
  []
 
-) (parts/NofDifferentPositions.tex) (parts/Rosenstock.tex)) (main.bbl [11]
-[12])
 
-Package caption Warning: Unused \captionsetup[figure] on input line 29.
-See the caption package documentation for explanation.
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 70--71
+[][][][] 
+ []
 
-[13
 
-] (main.aux)
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 76--77
+[][][][] 
+ []
+
+[13]) (parts/ContinuousRW.tex
+Overfull \hbox (1.69923pt too wide) in paragraph at lines 1--1
+[]\LGR/lmss/bx/n/17.28 Suneq†c tu-qa-–oc pe-r–pa-toc se d‘o diastàseic- 
+ []
+
+
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 5--6
+[][][][] 
+ []
+
+
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 10--11
+[][][][] 
+ []
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 13.
+
+Overfull \hbox (2.06033pt too wide) in paragraph at lines 14--15
+[]\LGR/lmss/m/n/12 Gia thn tu-qa-–a e-pi-lo-g† thc gw-n–ac ek-me-tal-leu-Ïma-st
+e thn e-nto-l†  [][]\T1/lmss/m/n/12 ran-dom.randint(0,359)[] 
+ []
+
+[15]
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 72--73
+[][][][] 
+ []
+
+[16]
+Overfull \hbox (3.00311pt too wide) in paragraph at lines 82--83
+[][][][] 
+ []
+
+[17]
+Overfull \hbox (34.63145pt too wide) in paragraph at lines 147--149
+\LGR/lmss/m/n/12 Qrhsimopoio‘me thn mËjo-do e-la-q–stwn te-tra-g∏nwn mËsw tou p
+a-kËtou [][]\T1/lmtt/m/n/12 sklearn.linear_model[] 
+ []
+
+[18]
+<figures/CRW_MSD.png, id=368, 433.62pt x 289.08pt>
+File: figures/CRW_MSD.png Graphic file (type png)
+<use figures/CRW_MSD.png>
+Package pdftex.def Info: figures/CRW_MSD.png  used on input line 187.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+) (parts/NofDifferentPositions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
+(parts/Rosenstock.tex)) (parts/Conclusions.tex [20 <./figures/CRW_MSD.png>]
+\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
+extiota \textomicron  4.
+) [21
+
+] [22
+
+]
+\textPi \textalpha \textrho \acctonos \textalpha \textrho \texttau \texteta \te
+xtmu \textalpha  {\greekscript \textAlpha \textnumeralsigngreek }.
+[23] [24
+
+]
+\textPi \textalpha \textrho \acctonos \textalpha \textrho \texttau \texteta \te
+xtmu \textalpha  {\greekscript \textBeta \textnumeralsigngreek }.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\bbl@hymapsel' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tw@' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\bbl@language@stack' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\aftergroup' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\languagename' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\bbl@language@stack' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\bbl@ifrestoring' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\bbl@ifrestoring' on input line 17.
+
+(main.bbl [25] [26
+
+]) [27] (main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41BE96F6E17ABCEE95B283250D44E250;4322.
+(rerunfilecheck)             Checksum: 0FE1F4642E1D441FA0DF9FCF52A0320A;4856.
  ) 
 Here is how much of TeX's memory you used:
- 29123 strings out of 477992
- 538416 string characters out of 2827466
- 1105218 words of memory out of 3000000
- 47244 multiletter control sequences out of 15000+600000
- 498542 words of font info for 66 fonts, out of 8000000 for 9000
+ 30126 strings out of 477992
+ 553738 string characters out of 2827466
+ 1173326 words of memory out of 3000000
+ 48039 multiletter control sequences out of 15000+600000
+ 509440 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,9n,120p,705b,1690s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}
-{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/
-Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsmc1200.p
-fb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsm
-i1200.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgr
-eek/gsmn1200.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/cbgreek/gsxn1200.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/cbgreek/gsxn1728.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmss12.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmssbx10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmtk10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmtt10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmtto10.pfb>
-Output written on main.pdf (13 pages, 257496 bytes).
+ 104i,9n,120p,1351b,2215s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\jmstf\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\
+cmbrbs10.pk>{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
+-mathsy.enc}{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
+-rm.enc}{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.
+enc}{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.
+enc}{C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/gfsneohelleni
+c/neohellenic.enc}<C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/gfsneohellenic/GFSNeohellenic-Regular.pfb><C:/Users/jmstf/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/cbgreek/gsmc1200.pfb><C:/Users/jmstf/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/cbgreek/gsmi1200.pfb><C:/Users/jmstf/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsmn1000.pfb><C:/Users/jm
+stf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsmn1200.pfb><C:/U
+sers/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsxn1200.pf
+b><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/cbgreek/gsxn
+1728.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+mi12.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+r12.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+s12.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+sbx10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+msy10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mtk10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mtt10.pfb><C:/Users/jmstf/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mtt12.pfb>
+Output written on main.pdf (27 pages, 401463 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 239 named destinations out of 1000 (max. 500000)
+ 175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
