@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{brownlee2018statistical}
+J.~Brownlee.
+\newblock {\em Statistical methods for machine learning: Discover how to
+  transform data into knowledge with Python}.
+\newblock Machine Learning Mastery, 2018.
+
+\bibitem{deisenroth2020mathematics}
+M.~P. Deisenroth, A.~A. Faisal, and C.~S. Ong.
+\newblock {\em Mathematics for machine learning}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{klein2013coding}
+P.~Klein.
+\newblock {\em Coding the Matrix: Linear Algebra Through Applications to
+  Computer Science}.
+\newblock Newtonian Press, 2013.
+
+\bibitem{son2020linear}
+H.~Son.
+\newblock {\em Linear Algebra Coding with Python}.
+\newblock Hyun-Seok Son, 2020.
+
+\end{thebibliography}

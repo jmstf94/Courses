@@ -1,0 +1,158 @@
+\chapter{Διανύσματα, Πίνακες και Βασικές Πράξεις}
+Η δομή την οποία μελετάμε στην γραμμική άλγεβρα είναι ο πίνακας. Ο πίνακας, είναι μία ορθογώνια διάταξη από αριθμούς, σύμβολα ή εκφράσεις. Συμβολίζουμε έναν πίνακα $m$ γραμμών και $n$ στηλών ως:
+\begin{equation}
+\mathbf{A}=\left(\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1 n} \\
+a_{21} & a_{22} & \cdots & a_{2 n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m 1} & a_{m 2} & \cdots & a_{m n}
+\end{array}\right)=\left(a_{i j}\right) \in \mathbb{R}^{m \times n}
+\end{equation}
+με $i=0,1 \cdots m, \quad j=0,1 \cdots n$. Στην {\en numpy}, το αντικείμενο που χρησιμοποιούμε για την δήλωση πίνακα είναι το {\en array()}:
+\en
+\begin{python}
+#####create the array#####
+A = np.array([[1,0,1],[2,1,0],[3,1,0],[0,4,5]])
+#####display the array#####
+print(A)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[1 0 1]
+ [2 1 0]
+ [3 1 0]
+ [0 4 5]]
+\end{codeout}
+\gr
+
+Μπορούμε να χρησιμοποιήσουμε τα κατάλληλα {\en attributes} για να δούμε τον τύπο των δεδομένων στον πίνακα αλλά και το σχήμα της διάταξης:
+\newpage
+\en
+\begin{python}
+######type of data#######
+print(A.dtype)
+########shape#########
+print(A.shape)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+int32
+(4, 3)
+\end{codeout}
+\gr
+Ένα ακόμη χρήσιμο {\en attribute} είναι ο υπολογισμός του ανάστροφου:
+\en
+\begin{python}
+######transpose#######
+print(A.T)
+#######shape########
+print(A.T.shape)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[1 2 3 0]
+ [0 1 1 4]
+ [1 0 0 5]]
+(3, 4)
+\end{codeout}
+\gr
+ο οποίος ορίζεται ως:
+\begin{equation}
+{\mathbf{A}}^T=\left(\begin{array}{cccc}
+a_{11} & a_{21} & \cdots & a_{m 1} \\
+a_{12} & a_{22} & \cdots & a_{m 2} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{1 n} & a_{2 n} & \cdots & a_{m n}
+\end{array}\right)=\left(a_{j i}\right) \in \mathbb{R}^{m \times n}
+\end{equation}
+με $i=0,1 \cdots m, \quad j=0,1 \cdots n$. Δηλαδή μετατρέπονται οι γραμμές σε στήλες και αντιστρόφως.
+
+Στο πλαίσιο της γραμμικής άλγεβρας το διάνυσμα δεν είναι τίποτα άλλο παρά ένας πίνακας με διάταξη $1 \times n$ ή $m \times 1$. Στην πρώτη περίπτωση καλείται και γραμμοδιάνυσμα ενώ στην δεύτερη περίπτωση στυλοδιάνυσμα. Προφανώς ο ανάστροφος ενός στυλοδιανύσματος μας δίνει το αντίστοιχο γραμμοδιάνυσμα και αντιστρόφως.
+
+Η {\en numpy} υποστηρίζει σχεδόν κάθε πιθανή πράξη μεταξύ πινάκων. Οι απλοί τελεστές τις python: $+,-,*,/,**,\%,//$ εκτελούν τις πράξεις όπως λέμε {en elementwise}, δηλαδή ανά στοιχείο των πινάκων με ακριβής αντιστοίχιση. Έστω ότι οι παραπάνω τελεστές συμβολίζονται με $ @ $, τότε η χρήση των παραπάνω συμβόλων μεταξύ δύο {\en np.array} δίνουν: 
+\begin{align}
+{\mathbf{A}}@{\mathbf{B}}&=\left(\begin{array}{cccc}
+a_{11} & a_{21} & \cdots & a_{m 1} \\
+a_{12} & a_{22} & \cdots & a_{m 2} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{1 n} & a_{2 n} & \cdots & a_{m n}
+\end{array}\right) @ \left(\begin{array}{cccc}
+b_{11} & b_{21} & \cdots & b_{m 1} \\
+b_{12} & b_{22} & \cdots & b_{m 2} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{1 n} & b_{2 n} & \cdots & b_{m n}
+\end{array}\right)\\&=\left(\begin{array}{cccc}
+a_{11}@b_{11} & \cdots & a_{m 1}@a_{m 1} \\
+\vdots  & \ddots & \vdots \\
+a_{1 n}@b_{1 n} & \cdots & a_{m n}@b_{m n}
+\end{array}\right)
+\end{align}
+Για παράδειγμα με χρήση του {\en modulo} $\%$:
+\en
+\begin{python}
+#######define A and B#######
+A=np.array([[4,2,2],[3,5,6],[2,2,3],[8,10,9]])
+B=np.array([[2,2,2],[1,3,1],[2,1,10],[4,5,5]])
+#####display elementwise modulo########
+print(A%B)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[0 0 0]
+ [0 2 0]
+ [0 0 3]
+ [0 0 4]]
+\end{codeout}
+\gr
+
+Οι βασικές πράξεις μεταξύ πινάκων είναι η πρόσθεση και ο πολλαπλασιασμός πινάκων. Η πρόσθεση πινάκων είναι όμοια με την πρόσθεση ανά στοιχείο συνεπώς δεν χρειάζεται κάποια ειδική συνάρτηση για τον υπολογισμό της. Αντιθέτως, ο πολλαπλασιασμός πινάκων είναι ιδιαίτερη πράξη αποτελούμενη από στοιχεία $c_{ij}$ ίσα με το εσωτερικό γινόμενο του γραμμοδιανύσματος $i$ του πρώτου πίνακα, και του στηλοδιανύσματος $j$ του δεύτερου πίνακα. Πιο συγκεκριμένα, το γινόμενο δύο πινάκων $Α$(με $m \times n$) και $Β$(με $n \times p$) το οποίο συμβολίζεται με $ΑΒ$(ένας πίνακας $m \times p$) ορίζεται ως:
+\begin{equation}
+\mathbf{A}\mathbf{B} = \left(\begin{array}{cccc}
+a_{11} b_{11}+\cdots+a_{1 n} b_{n 1} & a_{11} b_{12}+\cdots+a_{1 n} b_{n 2} & \cdots & a_{11} b_{1 p}+\cdots+a_{1 n} b_{n p} \\
+a_{21} b_{11}+\cdots+a_{2 n} b_{n 1} & a_{21} b_{12}+\cdots+a_{2 n} b_{n 2} & \cdots & a_{21} b_{1 p}+\cdots+a_{2 n} b_{n p} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m 1} b_{11}+\cdots+a_{m n} b_{n 1} & a_{m 1} b_{12}+\cdots+a_{m n} b_{n 2} & \cdots & a_{m 1} b_{1 p}+\cdots+a_{m n} b_{n p}
+\end{array}\right)
+\end{equation}
+όπου αν προσέξουμε κάθε στοιχείο είναι εσωτερικό γινόμενο διανυσμάτων $a_i \cdot b_j$ ($i$ για τις γραμμές, $j$ για τις στήλες):
+\begin{equation}
+c_{i j}=a_{i 1} b_{1 j}+a_{i 2} b_{2 j}+\cdots+a_{i n} b_{n j}=\sum_{k=1}^n a_{i k} b_{k j}
+\end{equation}
+
+Ο τρόπος με τον οποίο πολλαπλασιάζουμε πίνακες στην {\en np.numpy} είναι με την χρήση της εντολής {\en np.matmul}:
+\en
+\begin{python}
+#######define A and B#######
+A=np.array([[4,2,2],[3,5,6],[2,2,3],[8,10,9]])
+B=np.array([[2,2,2],[1,3,1],[2,1,10],[4,5,5]]).T
+###calculate matrix product###
+print(np.matmul(A,B))
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[ 16  12  30  36]
+ [ 28  24  71  67]
+ [ 14  11  36  33]
+ [ 54  47 116 127]]
+\end{codeout}
+\gr
+Σε περίπτωση που οι διαστάσεις των πινάκων δεν είναι κατάλληλες για τον πολλαπλασιασμό τους, η συγκεκριμένη εντολή θα επιστρέψει {\en ValueError}. 
+
+Αν έχω δύο διανύσματα και θέλω να υπολογίσω το εσωτερικό τους γινόμενο χωρίς να περιπλέξουμε την διαδικασία με το αν είναι σε μορφή στήλης, ή σε μορφή γραμμής, μπορούμε να χρησιμοποιήσουμε την εντολή {\en dot} ως εξής:
+\en
+\begin{python}
+######define two vectors##########
+x = np.array([1,2,1])
+y = np.array([3,0,1])
+####do we get the same result?####
+print(np.dot(y,x)==np.dot(x,y))
+######what is that result?########
+print(np.dot(x,y))
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+True
+4
+\end{codeout}
+\gr
+Σε αυτή την εντολή θα μπορούσαμε να έχουμε ορίσει το διάνυσμα $y$ ως {\en np.array([[3],[0],[1]])}. Σε αυτή την περίπτωση η εντολή {\en np.dot(x,y)} επιστρέφει την 1επί1 {\en np.array([4])}, ενώ η εντολή {\en np.dot(x,y)} δεν αποδέχεται την μη συμβατότητα των διαστάσεων και πετάει {\en error}. Φυσικά, το ίδιο συμβαίνει αν και τα δύο διανύσματα έχουν την μορφή 1επί3.  

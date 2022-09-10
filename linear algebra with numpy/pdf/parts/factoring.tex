@@ -1,0 +1,202 @@
+\chapter{Παραγοντοποιήσεις}
+Έχουμε είδη δει την ιδιοπαραγοντοποίηση πίνακα. Θα δούμε σε αυτό το κεφάλαιο άλλες τρεις παραγοντοποιήσεις. 
+\section{{\en LU}}
+Η παραγοντοποίηση $LU$ αφορά την παραγοντοποίηση πίνακα σε ένα γινόμενο ενός κάτω τριγωνικού $L$ και ενός άνω τριγωνικού $U$:
+\begin{equation}
+\mathbf{A} = \mathbf{L}\mathbf{U} =
+\left( \begin{array}{ccc}
+\ell_{11} & 0 & 0 \\
+\vdots & \ddots & 0 \\
+\ell_{n1} & \cdots & \ell_{nn}
+\end{array}\right)
+\left( 
+\begin{array}{ccc}
+u_{11} & \cdots & u_{nn} \\
+0 & \ddots & \vdots \\
+0 & 0 & u_{nn}
+\end{array}
+\right)
+\end{equation}
+Υπάρχουν αλγόριθμοι να υπολογίσουν αναλυτικά την παραγοντοποίηση $LU$. Για να την υπολογίσουμε μέσω της {\en Python} θα χρησιμοποιήσουμε την {\en scipy} βιβλιοθήκη γραμμένη με χρήση της {\en numpy}:
+\en
+\begin{python}
+from numpy import array
+from scipy.linalg import lu
+
+# define a square matrix
+A = array([
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]])
+
+# factorize
+P, L, U = lu(A)
+print(P)
+print(L)
+print(U)
+
+# reconstruct
+print(P@L@U)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+[[1.         0.         0.        ]
+ [0.14285714 1.         0.        ]
+ [0.57142857 0.5        1.        ]]
+[[ 7.00000000e+00  8.00000000e+00  9.00000000e+00]
+ [ 0.00000000e+00  8.57142857e-01  1.71428571e+00]
+ [ 0.00000000e+00  0.00000000e+00 -1.58603289e-16]]
+[[1. 2. 3.]
+ [4. 5. 6.]
+ [7. 8. 9.]]
+\end{codeout}
+\gr
+Παρατηρούμε ότι η αριθμητική παραγοντοποίηση χρησιμοποιεί και έναν πίνακα $P$. Αυτός ο πίνακας όπως φαίνεται και από το {\en output} χρησιμοποιείται για να περιστρέψει κάποιους υπόχωρους των τελικών πινάκων και δεν επηρεάζει τις αριθμητικές τιμές των $L$ και $U$. Ο αλγόριθμος υπολογισμού $PLU$ είναι πιο σταθερός και γι' αυτό επιλέχθηκε από τους {\en developers} της {\en numpy}.
+\section{{\en SVD}}
+Η ανάλυση πίνακα σε ιδιάζουσες τιμές είναι ουσιαστικά η γενίκευση της ιδιοπαραγοντοποίησης για οποιονδήποτε $m \times n$ πίνακα και όχι μόνο για τους τετραγωνικούς.
+\begin{equation}
+\mathbf{M}=\mathbf{U} \boldsymbol{\Sigma} \mathbf{V}^*
+\end{equation}
+Όπου αν ο $\mathbf{M}$ είναι πραγματικός σημαίνει ότι $\mathbf{V}^* \equiv \mathbf{V}^T$:
+\begin{itemize}
+\item $\mathbf{U}$ είναι $m \times m$, μοναδιαίος (για πραγματικό $\mathbf{M}$ ορθογώνιος) και αποτελείται από τα αριστερά ιδιοδιανύσματα του $\mathbf{M}$
+\item $\mathbf{V}$ είναι $n \times n$, μοναδιαίος (για πραγματικό $\mathbf{M}$ ορθογώνιος)  και αποτελείται από τα δεξιά ορθογώνια ιδιοδιανύσματα του $\mathbf{M}$
+\item $\Sigma$ είναι $m \times n$, είναι διαγώνιος με μη αρνητικά στοιχεία
+\end{itemize}
+
+Πάμε να υπολογίσουμε την παραγοντοποίηση με χρήση της της {\en numpy}:
+\en
+\begin{python}
+import numpy as np
+import numpy.linalg as lin
+
+# define matrix
+M = np.array([[3,2,2],[2,3,-2]])
+m , n = M.shape
+
+# use automated svd
+U, s, V = lin.svd(M)
+
+# create sigma matrix
+Sigma = np.zeros((m,n))
+for i in range(np.min([m,n])):
+    Sigma[i,i] = s[i]
+
+# print components - V is already transposed
+print(U)
+print(Sigma)
+print(V)
+
+# check result
+print(U@Sigma@V)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[ 0.70710678 -0.70710678]
+ [ 0.70710678  0.70710678]]
+[[5. 0. 0.]
+ [0. 3. 0.]]
+[[ 7.07106781e-01  7.07106781e-01  3.67439059e-16]
+ [-2.35702260e-01  2.35702260e-01 -9.42809042e-01]
+ [-6.66666667e-01  6.66666667e-01  3.33333333e-01]]
+[[ 3.  2.  2.]
+ [ 2.  3. -2.]]
+\end{codeout}
+\gr
+Στον αναλυτικό υπολογισμό θα έπρεπε να βρούμε την ιδιοπαραγοντοποίηση των $\mathbf{M} \mathbf{M}^{T}$ και $\mathbf{M}^{Τ} \mathbf{M}$, ώστε να βρούμε τον $\mathbf{U}$ και τον $\mathbf{V}$ αντίστοιχα.
+\subsection{Εφαρμογές - Συμπίεση εικόνας}
+Μπορούμε να χρησιμοποιήσουμε την παραγοντοποίηση σε ιδιάζουσες τιμές για να συμπιέσουμε εικόνες. Η τεχνική ονομάζεται ελάττωση διάστασης και αφορά το ανάπτυγμα ενός πίνακα σε άθροισμα πινάκων τάξης 1. H τάξη ενός πίνακα είναι ο μέγιστος αριθμός των γραμμικά ανεξάρτητων διανυσμάτων στήλης ή γραμμής. Σε ένα πίνακα όπου μία γραμμή είναι ο πολλαπλασιασμός μιας άλλης με κάποιον αριθμό μιλάμε για εξαρτημένα διανύσματα. Όταν λοιπόν ανάγουμε ένα πίνακα(μία εικόνα) στην ιδιάζουσα παραγοντοποίηση, οι πίνακες $\mathbf{U}$ και $\mathbf{V}$ είναι ορθογώνιοι, επομένως, τα διανύσματα που τους αποτελούν είναι κάθετα μεταξύ τους. Συνεπώς η τάξη είναι όση και η διάστασή τους. Αναλύουμε λοιπόν τον πίνακα $\Sigma$:
+\begin{equation}
+\mathbf{M}=\sum_{i=1}^r \sigma_i \mathbf{u}_i \mathbf{v}_i^*
+\end{equation}
+όπου $r$ είναι η τάξη του $\mathbf{M}$.  Αν κρατήσουμε μόνο τις μεγαλύτερες ιδιοτιμές $\sigma_i$ σημαίνει ότι έχουμε μία προσέγγιση του $\mathbf{M}$ σε άθροισμα πινάκων τάξης 1. Αυτή η προσέγγιση είναι που ονομάζουμε συμπίεση, αν ο πίνακας $\mathbf{M}$ έχει τιμές χρωμάτων. Ας κάνουμε ένα απλό παράδειγμα:
+
+\en
+\begin{python}
+import numpy as np
+import numpy.linalg as lin
+
+# define matrix
+M = np.array([[1.8,1.2],[4.4,4.6]])
+m,n = M.shape
+
+# use automated svd
+U, s, V = lin.svd(M)
+
+# create sigma matrix
+Sigma = np.zeros((m,n))
+for i in range(np.min([m,n])):
+    Sigma[i,i] = s[i]
+
+# print components - V is already transposed
+print(f"U = {U}\n")
+print(f"Sigma = {Sigma}\n")
+print(f"V = {V}")
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+U = [[-0.31622777 -0.9486833 ]
+ [-0.9486833   0.31622777]]
+
+Sigma = [[6.70820393 0.        ]
+ [0.         0.4472136 ]]
+
+V = [[-0.31622777 -0.9486833 ]
+ [-0.9486833   0.31622777]]
+\end{codeout}
+\gr
+
+\en
+\begin{python}
+# choose just the first approximation
+# to do that we just : sigma[1,1]=0
+Sigma[1,1]=0
+
+M_approximate = U@Sigma@V
+# M_approximate has rank one thus we don't have to store all the elements of M
+# we just need to store [[1],[3]] and [1.5 1.5] then matmulthem
+print(M)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[1.8 1.2]
+ [4.4 4.6]]
+\end{codeout}
+\gr
+\section{{\en Cholesky}}
+Η παραγοντοποίηση {\en Cholesky} είναι η παραγοντοποίηση  ερμιτιανού($\mathbf{A}=\mathbf{A}^{H}$) ημι-θετικού(μη αρνητικές ιδιοτιμές) πίνακα, σε έναν κάτω τριγωνικό πίνακα επί τον ερμιτιανό συζυγή του:
+\begin{equation}
+\mathbf{A}=\mathbf{L} \mathbf{L}^{*}
+\end{equation}
+όπου στην περίπτωση που ο $\mathbf{A}$ είναι πραγματικός:
+\begin{equation}
+\mathbf{A}=\mathbf{L} \mathbf{L}^T
+\end{equation}
+Υπάρχουν αναλυτικοί έτοιμοι τύποι για τον υπολογισμό του $
+\mathbf{L}$. Στη {\en numpy}:
+\en
+\begin{python}
+# cholesky
+import numpy.linalg as lin
+
+# hermitian positive semi definite matrix
+M = np.array([[3,2,2],[2,3,2],[2,2,2]])
+L = lin.cholesky(M)
+print(L)
+
+# check
+print(L@L.T)
+\end{python}
+\vspace*{-0.7cm}
+\begin{codeout}
+[[1.73205081 0.         0.        ]
+ [1.15470054 1.29099445 0.        ]
+ [1.15470054 0.51639778 0.63245553]]
+[[3. 2. 2.]
+ [2. 3. 2.]
+ [2. 2. 2.]]
+\end{codeout}
+\gr
