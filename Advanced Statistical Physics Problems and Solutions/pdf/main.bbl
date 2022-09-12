@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{bar2008random}
+Z.~Bar-Yossef and M.~Gurevich.
+\newblock Random sampling from a search engine's index.
+\newblock {\em Journal of the ACM (JACM)}, 55(5):1--74, 2008.
+
+\bibitem{gallos2001trapping}
+L.~K. Gallos, P.~Argyrakis, and K.~W. Kehr.
+\newblock Trapping and survival probability in two dimensions.
+\newblock {\em Physical Review E}, 63(2):021104, 2001.
+
+\bibitem{kodde1984forecasting}
+D.~A. Kodde and H.~Schreuder.
+\newblock Forecasting corporate revenue and profit: Time-series models versus
+  management and analysts.
+\newblock {\em Journal of Business Finance \& Accounting}, 11(3):381--395,
+  1984.
+
+\bibitem{montroll1965random}
+E.~W. Montroll and G.~H. Weiss.
+\newblock Random walks on lattices. ii.
+\newblock {\em Journal of Mathematical Physics}, 6(2):167--181, 1965.
+
+\bibitem{nelson1999continuous}
+J.~Nelson.
+\newblock Continuous-time random-walk model of electron transport in
+  nanocrystalline tio 2 electrodes.
+\newblock {\em Physical Review B}, 59(23):15374, 1999.
+
+\bibitem{nosofsky2008exemplar}
+R.~M. Nosofsky and T.~J. Palmieri.
+\newblock " an exemplar-based random walk model of speeded classification":
+  Correction to nosofsky and palmeri (1997).
+\newblock 2008.
+
+\bibitem{rosenstock1970random}
+H.~B. Rosenstock.
+\newblock Random walks on lattices with traps.
+\newblock {\em Journal of Mathematical Physics}, 11(2):487--490, 1970.
+
+\end{thebibliography}
